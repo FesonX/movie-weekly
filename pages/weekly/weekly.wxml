@@ -1,0 +1,6 @@
+<view class='container'>
+<image src="/images/searching.webp" class="about-banner"></image>
+<text style='font-weight:bold; font-size:60rpx;'>网络谜踪</text>
+<text>Searching</text>
+<text>豆瓣评分：8.7</text>
+</view>
