@@ -1,6 +1,6 @@
 <view class='container'>
-<image src="/images/searching.jpg" class="movie-mask" mode='aspectFill'></image>
+<image src='{{thisWeekMovie.imagePath}}' class="movie-mask" mode='aspectFill'></image>
 <text style='font-weight:bold; font-size:60rpx;'>网络谜踪</text>
-<text>Searching</text>
-<text>豆瓣评分：8.7</text>
+<text>{{thisWeekMovie.comment}}</text>
+<text>豆瓣评分：{{thisWeekMovie.score}}</text>
 </view>
