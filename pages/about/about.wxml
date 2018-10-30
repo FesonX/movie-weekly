@@ -2,7 +2,7 @@
 <image src="/images/Penguins.jpg" class="about-banner"></image>
 <text style='font-weight:bold; font-size:60rpx;'>电影周周看</text>
 <view>
-  <navigator url='/pages/weekly/weekly' style='display:inline;' open-type='navigate' hover-class='nav-hover' class='nav-default'>每周推荐</navigator><text>一部电影</text>
+  <navigator url='/pages/weekly/weekly' style='display:inline;' open-type='switchTab' hover-class='nav-hover' class='nav-default'>每周推荐</navigator><text>一部电影</text>
 </view>
 <text>Weibo: weibo.com/feson123</text>
 </view>

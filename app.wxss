@@ -6,10 +6,15 @@
   justify-content: space-around;
   align-items: center;
 }
+.movie-mask{
+  height: 375rpx;
+  width: 375rpx;
+  border-radius: 10%;
+}
 
 .nav-default{
-  color: goldenrod;
+  color: #daa520;
 }
 .nav-hover{
-  color: red;
+  color: rgb(167, 95, 167);
 }
