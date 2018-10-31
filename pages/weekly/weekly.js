@@ -1,11 +1,27 @@
 Page({
-  data:{
-    thisWeekMovie:{
-      name: "网络谜踪",
-      comment: "桌面电影新高度",
-      imagePath: "/images/searching.jpg",
-      score:"8.7",
-      isHighlyRecommended: false
-    }
+  data: {
+    weeklyMovieList: [
+      {
+        name: "网络谜踪",
+        comment: "桌面电影新高度",
+        imagePath: "/images/searching.jpg",
+        isHighlyRecommended: false,
+        score: 8.7,
+      },
+      {
+        name: "这个杀手不太冷",
+        comment: "小萝莉与怪蜀黍纯真灿烂的爱情故事",
+        imagePath: "/images/leon.jpg",
+        isHighlyRecommended: false,
+        score: 9.4,
+      },
+      {
+        name: "风味人间",
+        comment: "舌尖上的世界",
+        imagePath: "/images/biteOfWorld.jpg",
+        isHighlyRecommended: true,
+        score: 9.4,
+      }
+    ]
   }
 })

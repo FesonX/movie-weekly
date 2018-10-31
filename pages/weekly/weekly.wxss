@@ -1,0 +1,27 @@
+.movie {
+  display: flex;
+}
+
+.movie-details {
+  display: flex;
+  flex-direction: column;
+  width: 550rpx;
+}
+
+.movie-image {
+  width: 500rpx;
+  height: 500rpx;
+  border-radius: 5%;
+}
+
+.movie-swiper {
+  height: 95vh; 
+}
+
+.movie-card {
+  height: 100%;
+  width: 100%;
+  background: #eee;
+  margin: 0 20rpx;
+  border-radius: 1%;
+}
