@@ -1,6 +1,6 @@
 {
-  "pages": ["pages/about/about",
-            "pages/weekly/weekly" ],
+  "pages": ["pages/weekly/weekly",
+            "pages/about/about" ],
   "tabBar": {
     "list":[{
       "text": "每周推荐",

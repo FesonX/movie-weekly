@@ -21,7 +21,28 @@ Page({
         imagePath: "/images/biteOfWorld.jpg",
         isHighlyRecommended: true,
         score: 9.4,
+      },
+    ],
+    currentIndex: 0,
+  },
+  // 常用于数据初始化
+  onLoad: function(options){
+    this.setData(
+      {
+        currentIndex: this.data.weeklyMovieList.length-1
       }
-    ]
-  }
+    )
+  },
+  // onShow: function(){
+
+  // },
+  // onReady: function(){
+
+  // },
+  // onHide: function(){
+
+  // },
+  // onUnload: function(){
+
+  // }
 })

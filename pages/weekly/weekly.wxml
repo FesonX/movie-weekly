@@ -1,12 +1,12 @@
 <view class=''>
-<swiper indicator-dots="{{true}}" previous-margin="50rpx" next-margin="50rpx" class='movie-swiper'>
+<swiper indicator-dots="{{true}}" current="{{currentIndex}}" previous-margin="50rpx" next-margin="50rpx" class='movie-swiper'>
   <swiper-item wx:for='{{weeklyMovieList}}' wx:key="unique" class='movie'>
     <view class='container movie-card'>
       <image class='movie-image' src='{{item.imagePath}}' mode='aspectFill'></image>
       <text style='font-weight:bold; font-size:60rpx;'>{{item.name}}</text>
       <text>{{item.comment}}</text>
       <text>豆瓣评分：{{item.score}}</text>
-      <text wx:if='{{item.isHighlyRecommended}}' style='color:#daa520;'>编辑推荐</text>
+      <text wx:if='{{item.isHighlyRecommended}}' style='color:#daa520;'>本周推荐</text>
     </view>
   </swiper-item>
 </swiper>
