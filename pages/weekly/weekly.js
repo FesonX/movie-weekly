@@ -50,5 +50,15 @@ Page({
     this.setData({
       currentIndex: this.data.weeklyMovieList.length-1
     })
+  },
+  jumpToDetail: function(ecvent){
+    wx.navigateTo({
+      url: '/pages/detail/detail',
+      success: (result)=>{
+        
+      },
+      fail: ()=>{},
+      complete: ()=>{}
+    });
   }
 })

@@ -1,7 +1,7 @@
 <view class=''>
 <swiper indicator-dots="{{true}}" current="{{currentIndex}}" previous-margin="50rpx" next-margin="50rpx" class='movie-swiper'>
   <swiper-item wx:for='{{weeklyMovieList}}' wx:key="unique" class='movie'>
-    <view class='container movie-card'>
+    <view class='container movie-card' bind:tap="jumpToDetail">
       <image class='movie-image' src='{{item.imagePath}}' mode='aspectFill'></image>
       <text style='font-weight:bold; font-size:60rpx;'>{{item.name}}</text>
       <text>{{item.comment}}</text>
