@@ -24,6 +24,7 @@ Page({
       },
     ],
     currentIndex: 0,
+    count: 0,
   },
   // 常用于数据初始化
   onLoad: function(options){
@@ -45,4 +46,9 @@ Page({
   // onUnload: function(){
 
   // }
+  returnIndex: function(ecvent){
+    this.setData({
+      currentIndex: this.data.weeklyMovieList.length-1
+    })
+  }
 })

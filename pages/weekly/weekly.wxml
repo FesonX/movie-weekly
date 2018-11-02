@@ -7,7 +7,12 @@
       <text>{{item.comment}}</text>
       <text>豆瓣评分：{{item.score}}</text>
       <text wx:if='{{item.isHighlyRecommended}}' style='color:#daa520;'>本周推荐</text>
+      <button bind:tap="returnIndex" wx:if="{{index < (weeklyMovieList.length - 1)}}" 
+      class="returnButton" size="mini">
+      返回本周
+      </button>
     </view>
   </swiper-item>
 </swiper>
+    
 </view>
