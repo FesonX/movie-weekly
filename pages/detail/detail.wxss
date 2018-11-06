@@ -9,5 +9,6 @@
 }
 
 .detail-intro{
-  margin: 10px;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
 }

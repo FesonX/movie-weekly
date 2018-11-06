@@ -3,10 +3,10 @@
     <image src='{{movie.image}}' class='detail-image' mode='aspectFill'></image>
     <text style='font-weight:bold; font-size:40rpx;'>{{movie.alt_title}}</text>
     <text>评分: {{movie.rating.average}} ( {{movie.rating.numRaters}} 人评价 )</text>
+    <view class='detail-intro'>
     <scroll-view scroll-y="{{true}}" style="height: 250px;">
-    <view class='detail-intro'> 
       <text style='font-weight:bold;'>电影简介: </text>
-      <text>{{movie.summary}}</text>
-    </view>
+      <text class='text'>{{movie.summary}}</text>
     </scroll-view>
+    </view>
 </view>

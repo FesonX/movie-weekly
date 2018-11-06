@@ -39,5 +39,10 @@ Page({
             
         });
         wx.showNavigationBarLoading();
+    },
+    onShareAppMessage: function(){
+        return {
+          title: "向你推荐: " + this.data.movie.title
+        }
     }
 })

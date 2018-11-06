@@ -18,3 +18,13 @@
 .nav-hover{
   color: rgb(167, 95, 167);
 }
+
+/*实现文字两端对齐*/
+.text{
+  text-align: justify;
+}
+.text::after{
+  width: 100%;
+  display: inline-block;
+  content: ''; 
+}

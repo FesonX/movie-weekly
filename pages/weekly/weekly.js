@@ -64,5 +64,10 @@ Page({
       fail: ()=>{},
       complete: ()=>{}
     });
+  },
+  onShareAppMessage: function(){
+    return {
+      title: "每周推荐"
+    }
   }
 })
