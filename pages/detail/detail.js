@@ -28,10 +28,16 @@ Page({
                     page.setData({
                         movie: result.data
                     })
+                    wx.hideNavigationBarLoading();
+                    wx.setNavigationBarTitle({
+                        title: result.data.title,
+                    });
                 } 
             },
             fail: ()=>{},
-            complete: ()=>{}
+            complete: ()=>{},
+            
         });
+        wx.showNavigationBarLoading();
     }
 })

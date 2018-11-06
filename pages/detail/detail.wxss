@@ -3,8 +3,8 @@
 }
 
 .detail-image{
-  width: 500rpx;
-  height: 500rpx;
+  width: 400rpx;
+  height: 400rpx;
   border-radius: 5%;
 }
 
