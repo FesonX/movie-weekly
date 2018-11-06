@@ -7,6 +7,7 @@ Page({
         imagePath: "/images/searching.jpg",
         isHighlyRecommended: false,
         score: 8.7,
+        id: 27615441
       },
       {
         name: "这个杀手不太冷",
@@ -14,6 +15,7 @@ Page({
         imagePath: "/images/leon.jpg",
         isHighlyRecommended: false,
         score: 9.4,
+        id: 1295644
       },
       {
         name: "风味人间",
@@ -21,6 +23,7 @@ Page({
         imagePath: "/images/biteOfWorld.jpg",
         isHighlyRecommended: true,
         score: 9.4,
+        id: 30156039
       },
     ],
     currentIndex: 0,
@@ -46,14 +49,15 @@ Page({
   // onUnload: function(){
 
   // }
-  returnIndex: function(ecvent){
+  returnIndex: function(event){
     this.setData({
       currentIndex: this.data.weeklyMovieList.length-1
     })
   },
-  jumpToDetail: function(ecvent){
+  jumpToDetail: function(event){
+    var movieId = event.currentTarget.dataset.movieId
     wx.navigateTo({
-      url: '/pages/detail/detail',
+      url: '/pages/detail/detail?id='+movieId,
       success: (result)=>{
         
       },

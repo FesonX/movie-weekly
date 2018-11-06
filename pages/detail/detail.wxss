@@ -1,0 +1,13 @@
+.detail{
+  display: flex;
+}
+
+.detail-image{
+  width: 500rpx;
+  height: 500rpx;
+  border-radius: 5%;
+}
+
+.detail-intro{
+  margin: 10px;
+}
